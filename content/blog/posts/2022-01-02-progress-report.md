@@ -1,9 +1,6 @@
 ---
-layout: post
-title:  "Progress Report 2022-01-02"
-date:   2022-01-02 19:30:00 -0500
-# categories: jekyll update
-author: Ryan J. Price
+title: 'Progress Report 2022-01-02'
+publishdate: 2022-01-02T19:30:00-0500
 ---
 
 Happy New Year!
@@ -56,7 +53,7 @@ but as a *single hostname* in the `fly` CLI. This isn't a difficult fix, but
 it's not one we've broached just yet, since local testing just uses a single
 worker node.
 
-And the final update: we've managed to secure a domain!
+And the final uppublishdate: we've managed to secure a domain!
 
 [opensourcecorp.org](https://opensourcecorp.org) is where we'll eventually be
 building out site content for the project at large. As of today, it just

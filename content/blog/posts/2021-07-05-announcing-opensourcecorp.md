@@ -1,9 +1,6 @@
 ---
-layout: post
-title:  "Announcing OpenSourceCorp!"
-date:   2021-07-05 23:50:00 -0500
-# categories: jekyll update
-author: Ryan J. Price
+title: 'Announcing OpenSourceCorp!'
+publishdate: 2021-07-05T23:50:00-0500
 ---
 
 Today, I'm very excited to finally announce the public launch of

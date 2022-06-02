@@ -1,2 +1,2 @@
-# I'd like to put this in VCS, but I might forget to render pre-commit
-site/
+.hugo_build.lock
+public

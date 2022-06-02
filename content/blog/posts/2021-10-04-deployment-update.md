@@ -1,9 +1,6 @@
 ---
-layout: post
-title:  "OSC updates: hosting decision & live services!"
-date:   2021-10-04 21:15:00 -0500
-# categories: jekyll update
-author: Ryan J. Price
+title: 'OSC updates: hosting decision & live services!'
+publishdate: 2021-10-04T21:15:00-0500
 ---
 
 [OpenSourceCorp](https://github.com/opensourcecorp/opensourcecorp) (OSC)

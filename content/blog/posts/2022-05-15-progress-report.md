@@ -1,9 +1,6 @@
 ---
-layout: post
-title:  "Progress Report 2022-05-15"
-date:   2022-05-15 12:00:00 -0600
-# categories: jekyll update
-author: Ryan J. Price
+title: 'Progress Report 2022-05-15'
+publishdate: 2022-05-15T12:00:00-0600
 ---
 
 (*Checks date of last post, sweats profusely*)

@@ -1,9 +1,6 @@
 ---
-layout: post
-title:  "Progress Report 2022-02-27"
-date:   2022-02-27 12:00:00 -0600
-# categories: jekyll update
-author: Ryan J. Price
+title: 'Progress Report 2022-02-27'
+publishdate: 2022-02-27T12:00:00-0600
 ---
 
 More radio silence as ever more work has been done across OSC. As you'll see

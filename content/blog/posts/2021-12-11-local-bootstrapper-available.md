@@ -1,9 +1,6 @@
 ---
-layout: post
-title:  "OSC local bootstrapper available"
-date:   2021-12-11 16:00:00 -0500
-# categories: jekyll update
-author: Ryan J. Price
+title: 'OSC local bootstrapper available'
+publishdate: 2021-12-11T16:00:00-0500
 ---
 
 [OpenSourceCorp](https://github.com/opensourcecorp/opensourcecorp) (OSC)

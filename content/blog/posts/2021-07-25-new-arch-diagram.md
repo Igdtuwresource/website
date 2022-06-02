@@ -1,9 +1,6 @@
 ---
-layout: post
-title:  "New architecture diagram!"
-date:   2021-07-25 20:00:00 -0500
-# categories: jekyll update
-author: Ryan J. Price
+title: 'New architecture diagram!'
+publishdate: 2021-07-25T20:00:00-0600
 ---
 
 [OpenSourceCorp's home repo](https://github.com/opensourcecorp/opensourcecorp)
