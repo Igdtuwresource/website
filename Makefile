@@ -6,19 +6,25 @@ DOCKER ?= docker
 OCI_REGISTRY ?= ociregistry.opensourcecorp.org
 OCI_REGISTRY_OWNER ?= library
 
-all: render
-
 .PHONY: %
 
-test:
-	@go test -v -cover ./...
+all: render
 
 render: clean
-	@go run ./...
+	@hugo
+
+render-dev: clean
+	@hugo -D
+
+serve:
+	@hugo server -D --disableFastRender
+
+test:
+	@bash ./scripts/test.sh
 
 clean:
 	@rm -rf \
-		site/
+		public/
 
 image-build: clean
 	@$(DOCKER) build -f Containerfile -t $(OCI_REGISTRY)/$(OCI_REGISTRY_OWNER)/$(PKGNAME):latest .

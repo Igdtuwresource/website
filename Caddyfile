@@ -1,5 +1,10 @@
-localhost:2015
+:2015
 
-root * /home/website/site
+root * /home/website/public
+
+handle_errors {
+  rewrite * /404.html
+  file_server
+}
 
 file_server
