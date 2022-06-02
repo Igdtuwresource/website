@@ -20,9 +20,9 @@ RUN curl -fsSL -o ./caddy 'https://caddyserver.com/api/download?os=linux&arch=am
 
 COPY --chown=website:website config.toml .
 COPY --chown=website:website content ./content
-COPY --chown=website:website data ./data
+# COPY --chown=website:website data ./data
 COPY --chown=website:website layouts ./layouts
-COPY --chown=website:website resources ./resources
+# COPY --chown=website:website resources ./resources
 COPY --chown=website:website scripts ./scripts
 COPY --chown=website:website static ./static
 COPY --chown=website:website Caddyfile .
