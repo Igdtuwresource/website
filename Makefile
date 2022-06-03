@@ -16,10 +16,13 @@ render: clean
 render-dev: clean
 	@hugo -D
 
-serve:
+serve: clean
+	@hugo server --disableFastRender
+
+serve-dev: clean
 	@hugo server -D --disableFastRender
 
-test:
+test: run
 	@bash ./scripts/test.sh
 
 clean:
@@ -29,5 +32,23 @@ clean:
 image-build: clean
 	@$(DOCKER) build -f Containerfile -t $(OCI_REGISTRY)/$(OCI_REGISTRY_OWNER)/$(PKGNAME):latest .
 
-image-run:
-	@$(DOCKER) run --rm -it -p 2015:2015 --name $(PKGNAME) $(OCI_REGISTRY)/$(OCI_REGISTRY_OWNER)/$(PKGNAME):latest
+run: image-build stop
+	@$(DOCKER) run \
+		--rm -dit \
+		-p 2015:2015 \
+		--name $(PKGNAME) \
+		$(OCI_REGISTRY)/$(OCI_REGISTRY_OWNER)/$(PKGNAME):latest
+	@sleep 2
+	@$(DOCKER) logs $(PKGNAME)
+	@printf '\n^^^ Website should be running; review logs above to confirm ^^^\n'
+
+stop:
+	@$(DOCKER) stop $(PKGNAME) > /dev/null 2>&1 || true
+
+# This is here until we're no longer serving via GitHub Pages -- but it's free, so.
+github-pages: clean render
+	@cp -r public/* ../opensourcecorp.github.io
+
+publish: github-pages
+	@git -C ../opensourcecorp.github.io commit -am "Updates from website repo"
+	@git -C ../opensourcecorp.github.io push

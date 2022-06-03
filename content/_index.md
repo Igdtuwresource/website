@@ -1,6 +1,8 @@
 ---
-title: 'OpenSourceCorp'
-date: 2022-06-01T21:17:46-05:00
+title: 'OpenSourceCorp - The Open-Source Enterprise'
 ---
 
-OpenSourceCorp Home
+***Welcome to OpenSourceCorp!***
+
+Pardon our construction -- we're still building out the site overall. In the
+meantime, check out our [blog posts](/blog/)!

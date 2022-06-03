@@ -3,8 +3,8 @@
 root * /home/website/public
 
 handle_errors {
-  rewrite * /404.html
-  file_server
+	rewrite * /404.html
+	file_server
 }
 
 file_server
