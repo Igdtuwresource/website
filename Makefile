@@ -47,7 +47,7 @@ stop:
 
 # This is here until we're no longer serving via GitHub Pages -- but it's free, so.
 github-pages: clean render
-	@cp -r public/* ../opensourcecorp.github.io
+	@cp -r public/* ../opensourcecorp.github.io/
 
 publish: github-pages
 	@git -C ../opensourcecorp.github.io commit -am "Updates from website repo"
