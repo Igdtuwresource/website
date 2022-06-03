@@ -28,7 +28,7 @@ body {
 }
 
 /* The navigation menu links & heading */
-.sidenav a, h1, h2, h3, h4, h5, h6 {
+.sidenav a, h2 {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   display: block;
