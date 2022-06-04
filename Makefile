@@ -32,7 +32,7 @@ clean:
 image-build: clean
 	@$(DOCKER) build -f Containerfile -t $(OCI_REGISTRY)/$(OCI_REGISTRY_OWNER)/$(PKGNAME):latest .
 
-run: image-build stop
+run-container: image-build stop-container
 	@$(DOCKER) run \
 		--rm -dit \
 		-p 2015:2015 \
@@ -42,7 +42,7 @@ run: image-build stop
 	@$(DOCKER) logs $(PKGNAME)
 	@printf '\n^^^ Website should be running; review logs above to confirm ^^^\n'
 
-stop:
+stop-container:
 	@$(DOCKER) stop $(PKGNAME) > /dev/null 2>&1 || true
 
 # This is here until we're no longer serving via GitHub Pages -- but it's free, so.

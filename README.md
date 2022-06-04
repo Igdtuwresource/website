@@ -19,5 +19,13 @@ pages for existing sections will always go in the relevant folder under
 what that would entail (spoiler: slightly more files).
 
 The `Makefile` in this repo helps to orchestrate website generation, preview,
-and publishing. After each commit made to this repo, you can run `make publish`
-to try and automatically publish website content.
+and publishing. Some notable `make` targets are listed in the table below.
+
+| Make target            | Description
+| :----------            | :----------
+| `render<-dev>`         | Generate static content from templates, with or without drafts
+| `serve<-dev>`          | Run Hugo server locally (`:1313`) to serve content, with or without drafts
+| `image-build`          | Build OCI image to serve content via a Caddy server instead of Hugo's server
+| `<run/stop>-container` | Starts or stops the running Caddy container (`:2015`)
+| `github-pages`         | Copy site content to adjacent GitHub Pages repo, if you need to review before publishing
+| `publish`              | Copy site content to adjacent GitHub Pages repo, commit, and push to publish changes
