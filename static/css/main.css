@@ -7,29 +7,28 @@ body {
   https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
 */
 
-/* Style main page content */
+/* Main page content */
 .content {
-  margin-left: 15%; /* Same as the width... */
-  padding-left: 1%; /* ... plus left padding of the sidebar */
+  margin-left: 160px; /* Same as the sidenav width... */
+  padding-left: 10px; /* ... plus its left padding */
 }
 
-/* The sidebar menu */
+/* The sidenav menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 15%; /* Set the width of the sidebar */
+  width: 160px; /* Set the width of the sidebar */
+  padding-left: 10px;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: white;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0px;
-  padding-left: 1%;
 }
 
-/* The navigation menu links & heading */
+/* The sidenav links & heading */
 .sidenav a, h2 {
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px 6px 16px; /* top-right-bottom-left */
   text-decoration: none;
   display: block;
 }

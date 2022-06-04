@@ -51,5 +51,6 @@ github-pages: clean render
 	@cp -r public/* ../opensourcecorp.github.io/
 
 publish: github-pages
-	@git -C ../opensourcecorp.github.io commit -am "Updates from website repo"
+	@git -C ../opensourcecorp.github.io add .
+	@git -C ../opensourcecorp.github.io commit -m "Updates from website repo"
 	@git -C ../opensourcecorp.github.io push
