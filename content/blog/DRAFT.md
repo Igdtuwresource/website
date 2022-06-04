@@ -14,3 +14,4 @@ Updates
 * `osc-infra` subsystems have been renamed across the board
 * `rhad` is totally redone
 * Website is LIVE, but janky except for blog posts
+* We have a WIP logo!
