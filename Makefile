@@ -27,7 +27,8 @@ test: run
 
 clean:
 	@rm -rf \
-		public/
+		public/ \
+		.hugo_build.lock
 
 image-build: clean
 	@$(DOCKER) build -f Containerfile -t $(OCI_REGISTRY)/$(OCI_REGISTRY_OWNER)/$(PKGNAME):latest .

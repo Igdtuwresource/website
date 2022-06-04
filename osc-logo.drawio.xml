@@ -1,0 +1,79 @@
+<!-- Drop this into draw.io's Arrange -> Insert -> Shape designer -->
+<!-- A lot of help from e.g. here:
+https://desk.draw.io/support/solutions/articles/16000070744-create-custom-shapes-in-diagrams-net-using-the-text-editor
+-->
+<!-- Fill hex should be set as #00FF80 -->
+<shape name="osc-logo" w="240" h="200" aspect="fixed" strokewidth="inherit">
+  <!-- background represents the outer, fillable border -->
+  <background>
+    <path>
+      <move x="0" y="40" />
+      <line x="0" y="160" />
+      <line x="40" y="200" />
+      <line x="80" y="160" />
+      <line x="120" y="200" />
+      <line x="160" y="160" />
+      <line x="200" y="200" />
+      <line x="240" y="160" />
+      <line x="220" y="140" />
+      <line x="200" y="160" />
+      <line x="200" y="40" />
+      <line x="220" y="60" />
+      <line x="240" y="40" />
+      <line x="200" y="0" />
+      <line x="160" y="40" />
+      <line x="120" y="0" />
+      <line x="80" y="40" />
+      <line x="40" y="0" />
+      <line x="0" y="40" />
+    </path>
+  </background>
+  <foreground>
+    <fillstroke />
+    <path>
+      <!-- O midline -->
+      <move x="40" y="40" />
+      <line x="40" y="160" />
+      <!-- S midline, top -->
+      <move x="120" y="40" />
+      <line x="120" y="80" />
+      <!-- S midline, bottom -->
+      <move x="120" y="120" />
+      <line x="120" y="160" />
+      <!-- O/S divider -->
+      <move x="80" y="40" />
+      <line x="80" y="160" />
+      <!-- S/C divider -->
+      <move x="160" y="40" />
+      <line x="160" y="160" />
+      <!-- S line, left bottom frontwrap -->
+      <move x="100" y="100" />
+      <line x="120" y="120" />
+      <!-- S line, right top frontwrap -->
+      <move x="120" y="80" />
+      <line x="140" y="100" />
+    </path>
+    <!-- Left & right triangles on the side of the S should not share the fill color -->
+    <save />
+    <fillstroke />
+    <!-- TODO: Last two characters are the alpha opacity, currently at 75%. I
+    want it to be totally transparent against the canvas BG, but 00 (0%) just
+    shows the blue -->
+    <fillcolor color="#ffffffBF" />
+    <path>
+      <!-- Left S triangle -->
+      <move x="80" y="80" />
+      <line x="80" y="120" />
+      <line x="100" y="100" />
+      <line x="80" y="80" />
+      <!-- Right S triangle -->
+      <move x="160" y="80" />
+      <line x="140" y="100" />
+      <line x="160" y="120" />
+      <line x="160" y="80" />
+    </path>
+    <fillstroke />
+    <restore />
+    <stroke />
+  </foreground>
+</shape>
