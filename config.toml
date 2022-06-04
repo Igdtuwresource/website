@@ -1,4 +1,5 @@
-baseURL = 'https://opensourcecorp.org/'
+# 'www' for now because GitHub Pages is fighting my registrar for an apex domain with HTTPS :shrug:
+baseURL = 'https://www.opensourcecorp.org/'
 languageCode = 'en-us'
 title = 'OpenSourceCorp'
 
