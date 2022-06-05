@@ -1,5 +1,5 @@
 ---
-title: 'OpenSourceCorp - the free and open-source enterprise'
+title: 'OpenSourceCorp - The Free and Open-Source Enterprise'
 ---
 
 ---
