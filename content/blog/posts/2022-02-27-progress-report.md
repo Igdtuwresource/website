@@ -1,6 +1,7 @@
 ---
-title: 'Progress Report 2022-02-27'
-publishdate: 2022-02-27T12:00:00-0600
+title: "Progress Report 2022-02-27"
+publishdate: 2022-02-27T12:00:00-06:00
+author: "Ryan J. Price"
 ---
 
 More radio silence as ever more work has been done across OSC. As you'll see

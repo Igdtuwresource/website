@@ -1,4 +1,11 @@
 {{ define "main" }}
   <h2>{{ .Name }}</h2>
+
+  {{- if eq .Section "blog" -}}
+  <em>By {{ .Params.author }} @ {{ .PublishDate }}; reading time {{ .ReadingTime }}m</em>
+  {{- end -}}
+
+  <br/><br/><br/>
+
   {{ .Content }}
 {{ end }}

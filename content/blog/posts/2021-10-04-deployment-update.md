@@ -1,6 +1,7 @@
 ---
-title: 'OSC updates: hosting decision & live services!'
-publishdate: 2021-10-04T21:15:00-0500
+title: "OSC updates: hosting decision & live services!"
+publishdate: 2021-10-04T21:15:00-05:00
+author: "Ryan J. Price"
 ---
 
 [OpenSourceCorp](https://github.com/opensourcecorp/opensourcecorp) (OSC)

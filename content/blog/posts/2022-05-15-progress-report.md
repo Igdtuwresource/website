@@ -1,6 +1,7 @@
 ---
-title: 'Progress Report 2022-05-15'
-publishdate: 2022-05-15T12:00:00-0600
+title: "Progress Report 2022-05-15"
+publishdate: 2022-05-15T12:00:00-06:00
+author: "Ryan J. Price"
 ---
 
 (*Checks date of last post, sweats profusely*)

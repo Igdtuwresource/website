@@ -1,6 +1,7 @@
 ---
-title: 'Progress Report 2022-01-02'
-publishdate: 2022-01-02T19:30:00-0500
+title: "Progress Report 2022-01-02"
+publishdate: 2022-01-02T19:30:00-05:00
+author: "Ryan J. Price"
 ---
 
 Happy New Year!

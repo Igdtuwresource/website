@@ -1,6 +1,7 @@
 ---
-title: 'OSC local bootstrapper available'
-publishdate: 2021-12-11T16:00:00-0500
+title: "OSC local bootstrapper available"
+publishdate: 2021-12-11T16:00:00-05:00
+author: "Ryan J. Price"
 ---
 
 [OpenSourceCorp](https://github.com/opensourcecorp/opensourcecorp) (OSC)

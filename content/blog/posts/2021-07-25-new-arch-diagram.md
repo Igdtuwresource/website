@@ -1,6 +1,7 @@
 ---
-title: 'New architecture diagram!'
-publishdate: 2021-07-25T20:00:00-0600
+title: "New architecture diagram!"
+publishdate: 2021-07-25T20:00:00-06:00
+author: "Ryan J. Price"
 ---
 
 [OpenSourceCorp's home repo](https://github.com/opensourcecorp/opensourcecorp)
