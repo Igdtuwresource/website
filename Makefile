@@ -6,6 +6,8 @@ DOCKER ?= docker
 OCI_REGISTRY ?= ociregistry.opensourcecorp.org
 OCI_REGISTRY_OWNER ?= library
 
+HTMX_VERSION ?= 1.7.0
+
 .PHONY: %
 
 all: render
@@ -54,3 +56,10 @@ publish: github-pages
 	@git -C ../opensourcecorp.github.io add .
 	@git -C ../opensourcecorp.github.io commit -m "Updates from website repo"
 	@git -C ../opensourcecorp.github.io push
+
+show-drafts:
+	@grep -rl 'draft: true' content/ | grep -v DRAFT.md
+
+get-htmx:
+	@mkdir -p ./static/js
+	@curl -fsSL -o ./static/js/htmx.min.js 'https://unpkg.com/htmx.org@$(HTMX_VERSION)'

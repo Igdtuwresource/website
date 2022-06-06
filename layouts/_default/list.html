@@ -2,13 +2,11 @@
 <h2>{{ .Name }}</h2>
 {{ .Content }}
 <ul>
-  {{ range .Pages.ByPublishDate.Reverse }}
+  {{ range .Pages }}
     <li>
-      <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-      <p><em>{{ .Params.author }}, {{ .Date.Format "2006-01-02" }}</em></p>
-      {{ .Summary }}
-      <br/><br/>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
     </li>
+    <br/>
   {{ end }}
 </ul>
 {{ end }}

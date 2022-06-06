@@ -23,6 +23,7 @@ and publishing. Some notable `make` targets are listed in the table below.
 
 | Make target            | Description
 | :----------            | :----------
+| `show-drafts`          | List files that are still in draft mode
 | `render<-dev>`         | Generate static content from templates, with or without drafts
 | `serve<-dev>`          | Run Hugo server locally (`:1313`) to serve content, with or without drafts
 | `image-build`          | Build OCI image to serve content via a Caddy server instead of Hugo's server
