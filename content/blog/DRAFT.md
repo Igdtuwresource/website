@@ -11,8 +11,4 @@ to source control without appearing on the site.
 Updates
 -------
 
-* `osc-infra` subsystems have been renamed across the board
-* `rhad` is totally redone
-* Website is LIVE, but janky except for blog posts
-  * We even have a WIP logo!
-* osc-infra tweaks for memory & disk concerns
+* x
