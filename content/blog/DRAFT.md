@@ -11,4 +11,5 @@ to source control without appearing on the site.
 Updates
 -------
 
-* x
+* For now, cut `rhad` linting functionality down to just what GitHub's
+  Super-Linter doesn't handle well.
