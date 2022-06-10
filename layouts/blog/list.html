@@ -1,12 +1,12 @@
 {{ define "main" }}
-<h2>{{ .Name }}</h2>
+<h2>{{ .Name }} <a href="/blog/index.xml"><img alt="rss-feed" src="/images/rss.png"/></a></h2>
 {{ .Content }}
 <ul>
   {{ range .Pages.ByPublishDate.Reverse }}
     <li>
       <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
       <p><em>{{ .Params.author }}, {{ .Date.Format "2006-01-02" }}</em></p>
-      {{ .Summary }}
+      {{ .Summary }} <a href="{{ .Permalink }}">(more)</a>
       <br/><br/>
     </li>
   {{ end }}

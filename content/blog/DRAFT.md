@@ -12,4 +12,6 @@ Updates
 -------
 
 * For now, cut `rhad` linting functionality down to just what GitHub's
-  Super-Linter doesn't handle well.
+  Super-Linter doesn't handle well
+
+* Blog has RSS feed link (but the feed itself had existed already)

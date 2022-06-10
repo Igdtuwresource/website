@@ -47,3 +47,7 @@ sidebar (less padding and a smaller font size) */
   .sidenav a { font-size: 18px; }
   .sidenav h2 { font-size: 24px; }
 }
+
+/* Resize images with a certain alt text (this is a way to resize images linked
+in Markdown) */
+img[alt=rss-feed] { width: 25px; }
