@@ -11,6 +11,9 @@ to source control without appearing on the site.
 Updates
 -------
 
+* Vault is up! Still need to get a) secrets into it, b) HA, and c) a way to get
+  the unseal keys off the machine post-build, but that will come in time.
+
 * For now, cut `rhad` linting functionality down to just what GitHub's
   Super-Linter doesn't handle well
 

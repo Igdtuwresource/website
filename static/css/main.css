@@ -51,3 +51,4 @@ sidebar (less padding and a smaller font size) */
 /* Resize images with a certain alt text (this is a way to resize images linked
 in Markdown) */
 img[alt=rss-feed] { width: 25px; }
+img[alt=team-photo] { width: 250px; }
