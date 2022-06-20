@@ -1,8 +1,7 @@
 ---
-title: "Progress Report 2022-06-19"
-publishdate: 2022-06-19T23:59:00-05:00
+title: "Progress Report 2022-06-20"
+publishdate: 2022-06-20T15:00:00-05:00
 author: "Ryan J. Price"
-draft: true
 ---
 
 Some heavy updates in this one, so buckle up for what's changed!
@@ -157,6 +156,18 @@ to be used as a lifecycle manager post-lint.
 
 ### Miscellaneous
 
+* For some time, at least one of the subsystem `Vagrantfiles` has specified a
+  larger-than-default disk size at runtime. This works as expected (in that a
+  disk that was 10GB would then be 20GB), but I was reminded the hard way that
+  ***simply increasing disk size does not increase available space***. You need
+  to also expand a partition to fill the new unused space, and then resize the
+  filesystem to take advantage of it. I noticed this when trying to pull very
+  large container images for `cicd` jobs, and the disk filled up when it
+  "shouldn't have". So, in `imgbuilder/scripts/run/main.sh`, there is now a
+  block that handles the two-step process of expanding the root partition and
+  resizing the filesystem. It's working as expected, which is a pleasant
+  surprise.
+
 * `osc-infra` will start having tagged releases from now on. This should help
   others (and myself, frankly) keep cleaner track of when each commit was marked
   as a) buildable and b) of some notable milestone.
@@ -184,5 +195,6 @@ to be used as a lifecycle manager post-lint.
   Another strange error is a sporadic failure during the internal TLS cert
   generation (`osc-infra/configmgmt/salt/salt/_common/internal_tls_certs.sls`).
   Sometimes (with no discernable pattern), the whole script fails at the very
-  first command (`openssl genrsa ...`). I can't yet tell if it's a race condition
-  thing, or something more opaque, but that's another thing to explore more.
+  first command (`openssl genrsa ...`). I can't yet tell if it's a race
+  condition thing, or something more opaque, but that's another thing to explore
+  more.
