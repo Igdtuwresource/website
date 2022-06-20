@@ -55,15 +55,15 @@ Being the very first subsystem worked on after the `imgbuilder` & `configmgmt`
 bases, the `cicd` subsystem is the oldest in OSC's infrastructure. Originally, I
 wanted to find a tool that:
 
-(a) Not "cloud-native" (specifically: not requiring a Kubernetes cluster)
+(a) was not "cloud-native" (specifically: not requiring a Kubernetes cluster)
 
 (b) did not have any kind of commercial tier available to it (so, no
 "open-core")
 
-(c) have centralizable pipeline definitions so every repo need not bring its own
+(c) has centralizable pipeline definitions so every repo need not bring its own
 def
 
-(d) have pipeline jobs defined in something readable/maintainable and not
+(d) has pipeline jobs defined in something readable/maintainable and not
 pseudo-script YAML.
 
 There was also an implicit (e) requirement of not requiring the JVM, because I
