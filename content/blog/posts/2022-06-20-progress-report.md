@@ -148,11 +148,17 @@ to be used as a lifecycle manager post-lint.
 
 ### Website updates
 
-* Blog has RSS feed link (but the feed itself had existed already)
+It turns out that Hugo (the tool used to build the site content you're reading)
+automatically generates an RSS feed for any of its "list" page types. The
+landing page for blog posts here is a "list" page. Hence, we have an RSS feed!
+It's the link under the orange RSS buttons at the top of the blog landing page,
+and at the bottom of *this* page.
 
-* Installing Docker (or rather, packages from the `docker-rootless-extras` repo)
-  on the subsystems has been throwing hash-sum mismatch errors a lot lately --
-  sporadically it works, but I want to explore workarounds/solutions.
+If you're not into feeds, that's ok! Stay tuned on the usual social media feeds
+for OSC updates. If you *are* into feeds, and are about to come after me about
+putting out an RSS feed and not an Atom feed, bear with me! Generating an Atom
+feed is more work than RSS using Hugo, because RSS comes for free out of the
+box. But it's on the roadmap!
 
 ### Miscellaneous
 
