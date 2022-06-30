@@ -11,6 +11,9 @@ to source control without appearing on the site.
 Updates
 -------
 
+* `osc-infra` bootstrapper supports AWS! we're using TF provisioners like
+  sinners. it's neat.
+
 * `osc-infra` now v0.2.0
 
 * `local-vm` bootstrapper refactored to not build separate images, and just
