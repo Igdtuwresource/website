@@ -179,7 +179,7 @@ box. But it's on the roadmap!
   as a) buildable and b) of some notable milestone.
 
 * I've started to notice some really frustrating issues in the local VM
-  bootstrapper where builds fail for spraodic (but usually consistent) reasons.
+  bootstrapper where builds fail for sporadic (but usually consistent) reasons.
   Most commonly, it's when trying to do and `apt-get update` anywhere at all, at
   any stage of the lifecycle install. I first noticed it when trying to install
   Docker on a subsystem node (via
