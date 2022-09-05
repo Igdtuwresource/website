@@ -9,7 +9,15 @@ come up and kept me away from working on OSC, but I wanted to throw out
 something quick to let folks know that neither I nor the project are dead.
 
 * [`rhad`](https://github.com/opensourcecorp/rhad) has been under a lot of
-  recent work. Some months ago, the concept of a `Rhadfile` was introduced to
+  recent work. It is now version `v0.3.0`. While most of the updates were a lot
+  of internal refactoring that aren't going to be very visible to users, the
+  minor-version bump is because `rhad` now runs `go vet` as part of its Go
+  linter runs. New feature, new minor version. Internal changes include a
+  filesystem-based state tracking mechanism (previously `rhad` used global vars
+  to track run state), and decoupling of reusable components to a separate repo
+  (discussed in the next bullet below).
+  
+  Additionally: some months ago, the concept of a `Rhadfile` was introduced to
   the codebase, which is a config-file format for `rhad` executions. The first
   pass at this was targeting an INI format, for its simplicity & readability. As
   it turns out, parsing an INI file is... interesting, to say the least. So,
@@ -23,8 +31,8 @@ something quick to let folks know that neither I nor the project are dead.
   that runs the GitHub Super-Linter, and `rhad` following, as well as a `make
   add-local-symlinks` target to symlink the script onto (what I hope is) your
   `$PATH`. Try it out and let me know if you run into any notable bugs.
-
-  `rhad` is now version `v0.3.0`, and the [container image on
+  
+  The [container image on
   GHCR](https://github.com/opensourcecorp/rhad/pkgs/container/rhad) reflects
   this in its `:latest` tag (I'll get around to getting version-tagged builds
   done in GHA at some point).
