@@ -3,6 +3,7 @@ body {
   background-color: lightgray;
 }
 
+
 /*
   The following sidenav stuff was shamelessly ripped from:
   https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
@@ -13,12 +14,16 @@ body {
   margin-left: 160px; /* Same as the sidenav width... */
   padding-left: 10px; /* ... plus its left padding */
 }
+/*upper nav */
+.heading{
+font-family: 'Signika', sans-serif;
+}
 
 /* The sidenav menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
-  padding-left: 10px;
+  padding-left: 5px;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -26,18 +31,30 @@ body {
   background-color: white;
   overflow-x: hidden; /* Disable horizontal scroll */
 }
-
+/*logo*/
+.logo{
+    border-color: aquamarine;
+}
+.logo:hover{
+  background-color: black;
+}
 /* The sidenav links & heading */
 .sidenav a,
 h2 {
   padding: 6px 8px 6px 16px; /* top-right-bottom-left */
   text-decoration: none;
   display: block;
+  color:black;
+  font-family: 'Tenor Sans', sans-serif;
+}
+.navigation{
+  font-family: 'Tenor Sans', sans-serif;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   background-color: lightgray;
+  color:blue;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the
